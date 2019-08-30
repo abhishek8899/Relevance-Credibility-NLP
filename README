@@ -1,0 +1,38 @@
+Installation
+Run pipenv
+
+$: install pipenv and enter the shell
+Install postgres
+
+Configure postgres:
+
+Create new db
+
+$: create database __name__
+
+Create password for postgresql
+
+$: psql postres
+
+$: \password
+
+Populate the environment variables listed in env.sample into .env with correct values.
+
+Install JDK
+
+Download Stanford CoreNLP Library
+
+$: wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip
+
+$: unzip stanford-corenlp-full-2018-02-27.zip -d stanford-corenlp-full
+
+nltk packages:
+
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('stopwords')
+
+Test
+Start the webserver - $: python app.py
